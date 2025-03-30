@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-blue: #04016C;
+        --color-purple: #4A16BD;
+        --color-blue2: #2E08C7;
+        --color-blue2: #7E08C7;
+        --color-purple&white: #2E08C7;
+        --color-button1: #083F9B;
+        --color-button2: #7F56D9;
+        --color-skyblue: #739FE8;
+        --color-lightpurple: #4F18CA;
+        --color-texttitlecolor: #0E38CD;
+        --color-white: #FFFFFF;
+        --color-black: #000000;
+        --color-grey: #4E596B;
+        --color-darkgrey: #324361;
+        --color-paragrey: #7E7EAA;
+        --color-darkblue: #0A033C;
+        --font-saira: "Saira", sans-serif;
+        --font-righteous: "Righteous", sans-serif;
+      }
+      @utility container{
+        center:true;
+        padding :1rem;
+      }
+      <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/3031/3031121.png"
+      type="image/x-icon"
+    />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Saira:ital,wght@0,100..900;1,100..900&family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+
+    </style>
+
+</head>
+<body class="font-righteous">
+   <!--Header / Navigationpart-->
+   <header>
+    <nav class="container flex items-center py-4 mt-2 sm:mt-12">
+        <div>
+            <img src="assets/Askmeidentity 2.svg" alt="logo">
+            </div>
+            <ul
+          class="hidden sm:flex flex-1 justify-end items-center gap-12 text-black text-sm"
+        >
+          <li class="cursor-pointer">Home</li>
+          <li class="cursor-pointer">About</li>
+          <li class="cursor-pointer">Courses</li>
+          <li class="cursor-pointer">Contact</li>
+          <img src="assets/Group 1.svg" alt="profile">
+          <a href="#">Login</a>
+          <button class="bg--color-button1 rounded-md px-7 py-3">Sign Up
+            </button>
+        </ul>
+        </nav>
+    </header>
+    <!--hero section-->
+    <section class="relative">
+        <!--hero section div-->
+        <div class=" bg-gradient-to-r from-blue-700 to-purple-600 p-6 mt-14 lg:mt-20">
+           <div class="flex flex-1 justify-center">
+           <div class="mx-auto">
+                <h2 class="flex flex-1 uppercase text-white ml-10  font-righteous text-xl md:text-4xl lg:text-xl text-center lg:text-left mb-6 mt-50">Successful coaches are visionaries</h2>
+                <h1 class="flex flex-1 text-white ml-10 font-righteous text-2xl font-bold md:text-4xl lg:text-7xl text-center lg:text-left mb-6 ">Good coaching is good teaching & <br>nothing else.</h1>
+                </div>
+                <div class="right">
+                        <!--review-->
+                        <div class="flex flex-1 mx-auto my-auto">
+                            <h3 class="flex flex-1 justify-center items-center flex-row text-white font-semibold">Shyam</h3>
+                            <p class="flex flex-1 justify-center items-center flex-row text-white ">In a coaching role, you ask the questions and rely more on your 
+                                staff, who become the experts, to provide the information.
+                                </p>
+                                <h6 class="text-indigo-900 font-semibold">4.9</h6>
+                                </div>
+                                <div class="flex flex-1 justify-end mx-auto relative "> 
+                                    <img src="assets/Ellipse 8324.svg" alt="">
+        
+                                <div class="absolute opacity-25">
+                                <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:h-full md:w-full" src="assets/brunette-woman-hugging-laptop 1.png" alt="women">
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                       
+            
+            <!--buttons part-->
+            <div class="">
+                <button class="border-2 border-white rounded-md text-white py-4 px-9 mt-250 font-semibold">View Courses</button>
+                <a href="#" class="flex-1 text-white hover:underline font-semibold">Get Free Consultation</a>
+                </div>
+                <div class="mt">
+                   <label class="text bg-white py-4 px-15">
+                    <input type="text" placeholder="What do you want to learn today?">
+                    </label>
+                      
+                        <button class="bg-gradient-to-r from-blue-800 to-purple-350 text-white font py-3 px-10 rounded-md">Search</button>
+                        
+                
+                    </div>
+                  
+                    </div>
+        </section>
+    
+</body>
+</html>
