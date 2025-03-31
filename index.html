@@ -1,125 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
-      @theme {
-        --color-blue: #04016C;
-        --color-purple: #4A16BD;
-        --color-blue2: #2E08C7;
-        --color-blue2: #7E08C7;
-        --color-purple&white: #2E08C7;
-        --color-button1: #083F9B;
-        --color-button2: #7F56D9;
-        --color-skyblue: #739FE8;
-        --color-lightpurple: #4F18CA;
-        --color-texttitlecolor: #0E38CD;
-        --color-white: #FFFFFF;
-        --color-black: #000000;
-        --color-grey: #4E596B;
-        --color-darkgrey: #324361;
-        --color-paragrey: #7E7EAA;
-        --color-darkblue: #0A033C;
-        --font-saira: "Saira", sans-serif;
-        --font-righteous: "Righteous", sans-serif;
-      }
-      @utility container{
-        center:true;
-        padding :1rem;
-      }
-      <link
-      rel="shortcut icon"
-      href="https://cdn-icons-png.flaticon.com/512/3031/3031121.png"
-      type="image/x-icon"
-    />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+            @theme {
+              --color-blue: #04016C;
+              --color-purple: #4A16BD;
+              --color-blue2: #2E08C7;
+              --color-blue2: #7E08C7;
+              --color-purple&white: #2E08C7;
+              --color-button1: #083F9B;
+              --color-button2: #7F56D9;
+              --color-skyblue: #739FE8;
+              --color-lightpurple: #4F18CA;
+              --color-texttitlecolor: #0E38CD;
+              --color-white: #FFFFFF;
+              --color-black: #000000;
+              --color-grey: #4E596B;
+              --color-darkgrey: #324361;
+              --color-paragrey: #7E7EAA;
+              --color-darkblue: #0A033C;
+              --font-saira: "Saira", sans-serif;
+              --font-righteous: "Righteous", sans-serif;
+            }
+            @utility container{
+              center:true;
+              padding :1rem;
+            }
+            <link
+            rel="shortcut icon"
+            href="https://cdn-icons-png.flaticon.com/512/3031/3031121.png"
+            type="image/x-icon"
+          />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Saira:ital,wght@0,100..900;1,100..900&family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Saira:ital,wght@0,100..900;1,100..900&family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
-      <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+            <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+          />
     </style>
-
-</head>
-<body class="font-righteous">
-   <!--Header / Navigationpart-->
-   <header>
-    <nav class="container flex items-center py-4 mt-2 sm:mt-12">
+  </head>
+  <body class="font-righteous">
+    <!--Header / Navigationpart-->
+    <header>
+      <nav class="container flex items-center py-4 mt-2 sm:mt-12">
         <div>
-            <img src="assets/Askmeidentity 2.svg" alt="logo">
-            </div>
-            <ul
+          <img src="assets/Askmeidentity 2.svg" alt="logo" />
+        </div>
+        <ul
           class="hidden sm:flex flex-1 justify-end items-center gap-12 text-black text-sm"
         >
           <li class="cursor-pointer">Home</li>
           <li class="cursor-pointer">About</li>
           <li class="cursor-pointer">Courses</li>
           <li class="cursor-pointer">Contact</li>
-          <img src="assets/Group 1.svg" alt="profile">
+          <img src="assets/Group 1.svg" alt="profile" />
           <a href="#">Login</a>
-          <button class="bg--color-button1 rounded-md px-7 py-3">Sign Up
-            </button>
+          <button
+            class="bg-gradient-to-r from-blue-800 to-purple-600 text-white font py-3 px-10 rounded-md"
+          >
+            Sign Up
+          </button>
         </ul>
-        </nav>
+      </nav>
     </header>
     <!--hero section-->
     <section class="relative">
-        <!--hero section div-->
-        <div class=" bg-gradient-to-r from-blue-700 to-purple-600 p-6 mt-14 lg:mt-20">
-           <div class="flex flex-1 justify-center">
-           <div class="mx-auto">
-                <h2 class="flex flex-1 uppercase text-white ml-10  font-righteous text-xl md:text-4xl lg:text-xl text-center lg:text-left mb-6 mt-50">Successful coaches are visionaries</h2>
-                <h1 class="flex flex-1 text-white ml-10 font-righteous text-2xl font-bold md:text-4xl lg:text-7xl text-center lg:text-left mb-6 ">Good coaching is good teaching & <br>nothing else.</h1>
-                </div>
-                <div class="right">
-                        <!--review-->
-                        <div class="flex flex-1 mx-auto my-auto">
-                            <h3 class="flex flex-1 justify-center items-center flex-row text-white font-semibold">Shyam</h3>
-                            <p class="flex flex-1 justify-center items-center flex-row text-white ">In a coaching role, you ask the questions and rely more on your 
-                                staff, who become the experts, to provide the information.
-                                </p>
-                                <h6 class="text-indigo-900 font-semibold">4.9</h6>
-                                </div>
-                                <div class="flex flex-1 justify-end mx-auto relative "> 
-                                    <img src="assets/Ellipse 8324.svg" alt="">
-        
-                                <div class="absolute opacity-25">
-                                <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:h-full md:w-full" src="assets/brunette-woman-hugging-laptop 1.png" alt="women">
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                       
-            
-            <!--buttons part-->
-            <div class="">
-                <button class="border-2 border-white rounded-md text-white py-4 px-9 mt-250 font-semibold">View Courses</button>
-                <a href="#" class="flex-1 text-white hover:underline font-semibold">Get Free Consultation</a>
-                </div>
-                <div class="mt">
-                   <label class="text bg-white py-4 px-15">
-                    <input type="text" placeholder="What do you want to learn today?">
-                    </label>
-                      
-                        <button class="bg-gradient-to-r from-blue-800 to-purple-350 text-white font py-3 px-10 rounded-md">Search</button>
-                        
-                
-                    </div>
-                  
-                    </div>
-        </section>
-    
-</body>
+      <!--hero section div-->
+      <div
+        class="bg-gradient-to-r from-blue-700 to-purple-600 p-6 mt-14 lg:mt-2"
+      >
+        <div class="flex flex-1 justify-center">
+          <div class="mx-auto">
+            <h2
+              class="flex flex-1 uppercase text-white ml-10 font-righteous text-xl md:text-4xl lg:text-xl text-center lg:text-left mb-6 mt-50"
+            >
+              Successful coaches are visionaries
+            </h2>
+            <h1
+              class="flex flex-1 text-white ml-10 font-righteous text-2xl font-bold md:text-4xl lg:text-7xl text-center lg:text-left mb-6"
+            >
+              Good coaching is good teaching & <br />nothing else.
+            </h1>
+          </div>
+          <div class="right">
+            <!--review-->
+            <div class="flex flex-1 mx-auto my-auto">
+              <h3
+                class="flex flex-1 justify-center items-center flex-row text-white font-semibold"
+              >
+                Shyam
+              </h3>
+              <p
+                class="flex flex-1 justify-center items-center flex-row text-white"
+              >
+                In a coaching role, you ask the questions and rely more on your
+                staff, who become the experts, to provide the information.
+              </p>
+              <h6 class="text-indigo-900 font-semibold">4.9</h6>
+            </div>
+            <div class="flex flex-1 justify-end mx-auto relative">
+              <img
+                class="w-3/6 h-5/6 sm:w-3/4 sm:h-3/4 md:h-full md:w-full"
+                src="assets/Ellipse 8324.svg"
+                alt=""
+              />
+
+              <div class="absolute opacity-25">
+                <img
+                  class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:h-full md:w-full"
+                  src="assets/brunette-woman-hugging-laptop 1.png"
+                  alt="women"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--buttons part-->
+        <div class="">
+          <button
+            class="border-2 border-white rounded-md text-white py-4 px-9 font-semibold"
+          >
+            View Courses
+          </button>
+          <a href="#" class="flex-1 text-white hover:underline font-semibold"
+            >Get Free Consultation</a
+          >
+        </div>
+        <div class="mt">
+          <label class="text bg-white py-4 px-15">
+            "What do you want to learn today?"
+          </label>
+
+          <button
+            class="bg-gradient-to-r from-blue-800 to-purple-600 text-white font py-3 px-10 rounded-md"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+      <!--apps -->
+      <div class="bg-gradient-to-r from-purple-800 to-blue-900 p-6">
+        <ul class="flex flex-1 justify-center gap-15">
+          <li><img src="assets/Link ⏵ brand6.png.svg" alt="spotify" /></li>
+          <li>
+            <img src="assets/Link ⏵ brand1.png.svg" alt="amazon" />
+          </li>
+          <li>
+            <img src="assets/Link ⏵ brand6.png.svg" alt="spotify" />
+          </li>
+          <li></li>
+          <li>
+            <img src="assets/Link ⏵ brand3.png (1).svg" alt="logitech" />
+          </li>
+          <li>
+            <img src="assets/Link ⏵ brand5.png.svg" alt="" />
+          </li>
+          <li>
+            <img src="assets/Link ⏵ brand1.png.svg" alt="" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--features-->
+    <section class="relative">
+      <div>
+        <div class="justify-center items-center">
+          <img src="assets/Ellipse 118.svg" alt="" />
+          <h2 class="flex justify-center font-bold text-5xl">
+            Featured <span class="text-blue-500">Course</span>
+          </h2>
+          <h3
+            class="flex justify-center font-righteous font-semibold uppercase text-xl mt-5"
+          >
+            The feature courses are we invented our teaching part
+          </h3>
+        </div>
+        <div class="grid grid-cols-3 gap-10 rounded-md py-7 px-25 mt-30">
+          <div class="shadow-md rounded-2xl">
+            <img
+              src="assets/3d-map-pins-gps-navigator-pin-checking-poins-3d-render-illustration 1.png"
+              alt="location"
+            />
+            <div class="grid grid-cols-2 gap-45">
+              <h6 class="text-gray-500 font-saira mt-3 text-sm py-2 px-3">
+                1,957 Students
+              </h6>
+              <h5 class="text-gray-500 font-saira mt-3 text-sm py-2 px-2">
+                01h 59m
+              </h5>
+            </div>
+            <p class="justify-center px-3 text-2xl font-bold">
+              Motion Graphics: Create a Nice Typography Animation
+            </p>
+            <div class="grid grid-cols-2 gap-55 mt-10 mb-4">
+              <h4 class="px-4 text-gray-500">Rs.499</h4>
+              <img src="assets/9054263_bx_cart_alt_icon 1.svg" alt="" />
+            </div>
+          </div>
+          <div class="shadow-md rounded-2xl">
+            <img
+              src="assets/3d-jigsaw-puzzle-pieces-pink-background-problem-solving-business-concept-3d-render-illustration 1.png"
+              alt="puzzle"
+            />
+            <div class="grid grid-cols-2 gap-45">
+              <h6 class="text-gray-500 font-saira mt-3 text-sm py-2 px-3">
+                9,575 Students
+              </h6>
+              <h5 class="text-gray-500 font-saira mt-3 text-sm py-2 px-2">
+                01h 59m
+              </h5>
+            </div>
+            <p class="justify-center px-3 text-2xl font-bold">
+              Advance PHP knowledge with JS to make smart web
+            </p>
+            <div class="grid grid-cols-2 gap-55 mt-10 mb-4">
+              <h4 class="px-4 text-gray-500">Rs.499</h4>
+              <img src="assets/9054263_bx_cart_alt_icon 1.svg" alt="" />
+            </div>
+          </div>
+          <div class="shadow-md rounded-2xl">
+            <img
+              src="assets/red-up-arrow-coin-stacks-pink-background-financial-success-growth-concept-3d-render-illustration 1.png"
+              alt="rocket"
+            />
+            <div class="grid grid-cols-2 gap-45">
+              <h6 class="text-gray-500 font-saira mt-3 text-sm py-2 px-3">
+                2,957 Students
+              </h6>
+              <h5 class="text-gray-500 font-saira mt-3 text-sm py-2 px-2">
+                02h 49m
+              </h5>
+            </div>
+            <p class="justify-center px-3 text-2xl font-bold">
+              Education Software and PHP and JS System Script
+            </p>
+            <div class="grid grid-cols-2 gap-55 mt-10 mb-4">
+              <h4 class="px-4 text-gray-500">Rs.499</h4>
+              <img src="assets/9054263_bx_cart_alt_icon 1.svg" alt="" />
+            </div>
+          </div>
+          <div class="shadow-md rounded-2xl">
+            <img
+              src="assets/red-up-arrow-coin-stacks-pink-background-financial-success-growth-concept-3d-render-illustration 1.png"
+              alt="coin"
+            />
+            <div class="grid grid-cols-2 gap-45">
+              <h6 class="text-gray-500 font-saira mt-3 text-sm py-2 px-3">
+                5,457 Students
+              </h6>
+              <h5 class="text-gray-500 font-saira mt-3 text-sm py-2 px-2">
+                01h 49m
+              </h5>
+            </div>
+            <p class="justify-center px-3 text-2xl font-bold">
+              The Complete Financial Analyst Training & Investing
+            </p>
+            <div class="grid grid-cols-2 gap-55 mt-10 mb-4">
+              <h4 class="px-4 text-gray-500">Rs.499</h4>
+              <img src="assets/9054263_bx_cart_alt_icon 1.svg" alt="" />
+            </div>
+          </div>
+          <div class="shadow-md rounded-2xl">
+            <img
+              src="assets/travel-concept-3d-illustration-airplane-flying-map-pin 1.png"
+              alt="flight"
+            />
+            <div class="grid grid-cols-2 gap-45">
+              <h6 class="text-gray-500 font-saira mt-3 text-sm py-2 px-3">
+                595 Students
+              </h6>
+              <h5 class="text-gray-500 font-saira mt-3 text-sm py-2 px-2">
+                01h 49m
+              </h5>
+            </div>
+            <p class="justify-center px-3 text-2xl font-bold">
+              Marketing 2023: Complete Guide To Instagram Growth
+            </p>
+            <div class="grid grid-cols-2 gap-55 mt-10 mb-4">
+              <h4 class="px-4 text-gray-500">Rs.499</h4>
+              <img src="assets/9054263_bx_cart_alt_icon 1.svg" alt="" />
+            </div>
+          </div>
+          <div class="shadow-md rounded-2xl">
+            <img
+              src="assets/online-banking-icon-money-saving-bank-bundles-money-coins-floating-around-purple-background 1.png"
+              alt="bank"
+            />
+            <div class="grid grid-cols-2 gap-45">
+              <h6 class="text-gray-500 font-saira mt-3 text-sm py-2 px-3">
+                458 Students
+              </h6>
+              <h5 class="text-gray-500 font-saira mt-3 text-sm py-2 px-2">
+                03h 00m
+              </h5>
+            </div>
+            <p class="justify-center px-3 text-2xl font-bold">
+              Learn 3D Modelling and Design for Beginners
+            </p>
+            <div class="grid grid-cols-2 gap-55 mt-10 mb-4">
+              <h4 class="px-4 text-gray-500">Rs.499</h4>
+              <img src="assets/9054263_bx_cart_alt_icon 1.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="bg-gradient-to-r from-blue-800 to-purple-600 text-white font py-3 px-10 rounded-md mt-20"
+          >
+            Explore courses
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--reasons-->
+    <section>
+      <div class="bg-gradient-to-r from-indigo-400 to-blue-900">
+        <div class="justify-center">
+          <h4
+            class="flex justify-center text-3xl font-semibold text-white mt-15 py-10"
+          >
+            Why learn with our courses?
+          </h4>
+          <p
+            class="flex flex-wrap justify-center text-2xl font-righteous text-white px-20"
+          >
+            We are providing the best courses and top classes. And extrodinery
+            placement training.....
+          </p>
+        </div>
+        <div class="flex flex-1 gap-25 mt-30 px-50 py-20">
+          <div class="shadow-md py-5 px-10">
+            <img src="assets/Vector (6).svg" alt="learn" />
+            <h2 class="mt-10 font-semibold text-white font-righteous">
+              01. Learn
+            </h2>
+            <p class="mt-7 text-md text-white font-righteous">
+              Learn continually. There is always “one more thing”to learn.
+            </p>
+          </div>
+          <div class="shadow-md py-5 px-15">
+            <img src="assets/Vector (7).svg" alt="graduate" />
+            <h2 class="mt-10 font-semibold text-white font-righteous">
+              02. Graduate
+            </h2>
+            <p class="mt-7 text-md text-white font-righteous">
+              Be bold,be courageous, be your best.
+            </p>
+          </div>
+          <div class="shadow-md py-5 px-10">
+            <img src="assets/Vector (8).svg" alt="work" />
+            <h2 class="mt-10 font-semibold text-white font-righteous">
+              03. Work
+            </h2>
+            <p class="mt-7 text-md text-white font-righteous">
+              Great companies are built in the office,with hard work put in by
+              team.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
